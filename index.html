@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/global.css">
+    <title>TP2_1W1</title>
+    
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+            <img src="images/logoPatin.png" alt="logoPatin.png">
+            </div>
+            <h1>Patinage de Vitesse</h1>
+
+        </div>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#inscription">Inscription</a>
+            <a href="#tableau">Tableau</a>
+            <a href="#articles">Articles</a>
+            <a href="#gallerie">Gallerie</a>
+            <a href="#video">Vidéos</a>
+        </nav>
+    </header>
+    <section id="main">
+        <div id="accueil">
+                <h2>TP2 :</h2>
+                <h1>Le Patinage de Vitesse</h1>
+                <h2>Clovis Gauthier</h2>
+                <h4>
+                    582-1W1--Mise en page Web |
+                    Techniques d'Intégration Multimédia<br>
+                    Collège de Maisonneuve | Automne 2022</h4>
+        </div>
+        <div id="inscription">
+            <form>
+                <div>
+                    <h2>Formulaire d'Inscription pour la saison 2022-2023</h2>
+                        <label>Nom
+                            <input type="text" required>
+                        </label>
+                        <label>Prénom
+                            <input type="text" required>
+                        </label>
+                        <label>Courriel
+                            <input type="email" required>
+                        </label>
+                        <fieldset>Sexe:
+                            <label> Masculin
+                                <input type="radio" name="sexe">
+                            </label>
+                            <label>Féminin
+                                <input type="radio" name="sexe">
+                            </label>
+                            <label>Autre
+                                <input type="radio" name="sexe">
+                            </label>
+                        </fieldset>
+                        <label>Date de Naissance
+                            <input type="number" min="1" max="31">
+                            <input type="month">
+                        </label>
+                        <input id="submit" type="submit" value="Envoyer">
+                        <input id="reset" type="reset" value="Vider">
+                </div>
+            </form>
+        </div>
+        <div id="tableau">
+                
+                <table>
+                    <caption>Horaire Hebdomadaire</caption>
+                <tbody>
+                <tr>
+                    <th>X</th>
+                    <th>Dimanche</th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                    <th>Vendredi</th>
+                    <th>Samedi</th>
+                </tr>
+                <tr>
+                    <th>École de Patin</th>
+                    <td class="trainingDay">Aréna RDP<br>15h00 à 16h00</td>
+                    <td colspan="2"></td>
+                    <td class="trainingDay">Aréna PAT<br>17h30 à 18h30</td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <th>Groupe 3</th>
+                    <td class="trainingDay">Aréna RDP<br>17h15 à 18h15</td>
+                    <td class="trainingDay">Aréna PAT<br>18h00 à 19h15</td>
+                    <td colspan="2"></td>
+                    <td class="trainingDay">Aréna PAT<br>18h30 à 19h30</td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <th>Groupe 2</th>
+                    <td class="trainingDay">Aréna RDP<br>19h45 à 21h</td>
+                    <td class="trainingDay">Aréna PAT<br>19h15 à 20h30</td>
+                    <td class="trainingDay">Salle Muscu<br>18h15 à 20h30</td>
+                    <td class="trainingDay">Aréna PAT<br>18h30 à 19h30</td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <th>Groupe 1</th>
+                    <td class="trainingDay">Aréna CAN*<br>9h30 à 11h15</td>
+                    <td class="trainingDay">Aréna CAN*<br>19h30 à 20h30</td>
+                    <td class="trainingDay">Salle Muscu<br>18h30 à 19h30</td>
+                    <td class="trainingDay">Aréna PAT<br>19h40 à 21h00</td>
+                    <td class="trainingDay">Aréna PAT<br>19h40 à 21h00</td>
+                    <td class="trainingDay">Aréna CAN*<br>19h30 à 20h30</td>
+                    <td></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="8">*L'horaire du CQD peut changer sans préavis. Veuillez consulter vos courriels fréquemment !!!</td>
+                </tfoot>
+            </table>
+        </div>
+        <div id="articles">
+            <div>
+                <h3>Équipement Obligatoire</h3>
+                <article>
+                    <p>
+                        La sécurité en patin est l'aspect le plus important
+                    </p>
+                    <img id="img1" src="images/equipement-obligatoire-ecole-de-patin_cpvpat.jpg"
+                         alt="https://cpvpat.org/">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente pariatur provident ea soluta, consectetur fuga quos modi quod? Illum repellat eos fuga tempora ipsa aliquam maiores omnis. Fugit, alias suscipit.
+                    </p>
+                </article>
+            </div>
+            <div>
+                <h3>Histoire</h3>
+                <article>
+                    <p>
+                        L'invention du patinage de vitesse ne remonte pas à hier !
+                    </p>
+                    <img id="img2" src="images/419588355.jpg" alt="https://speedskatingwinterolympics2014.weebly.com/history-of-speed-skating.html">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad veritatis beatae fuga, exercitationem commodi illo at impedit minus quod libero magnam quasi sequi porro praesentium mollitia, omnis fugiat inventore eligendi.
+                    </p>
+                </article>
+            </div>
+            <div>
+                <h3>École de Patin</h3>
+                <article>
+                    <p>
+                        Notre club est fier de suivre le programme d'école de patin Les Pingouins créé par patinage de vitess quebec.
+                    </p>
+                <img id="img3" src="images/logo.png" alt="https://lespingouins.fpvq.org/fr/publication/nouvelle/sinscrire_et_trouver_votre_ecole_les_pingouins.html">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fugiat molestiae alias, doloremque nam officia harum mollitia odio omnis, numquam voluptatum quasi esse repellendus? Earum eius sed commodi quod corrupti.
+                </p>
+                </article>
+            </div>
+        </div>
+        <div id="gallerie">
+            <div>
+                <img src="images/2022-04-08_GK01209.jpg" alt="1">
+                <img src="images/2022-04-09_GK04546.jpg" alt="2">
+                <img src="images/2022-04-09_GK04225.jpg" alt="3">
+                <img src="images/2022-04-09_GK03780.jpg" alt="4">
+                <img src="images/2022-04-10_GK03852.jpg" alt="5">
+            </div>
+            <div>
+                <img src="images/2022-04-10_GK04916.jpg" alt="6" id="six">
+                <img src="images/PV210829sel1607-13.jpg" alt="7" id="sept">
+                <img src="images/PV210829sel1607-4.jpg" alt="8" id="huit">
+                <img src="images/PV210829sel1315-7.jpg" alt="9" id="neuf">
+                <img src="images/2021SpeedSkatingWC_Day3-9204257.jpg" alt="10" id="dix">
+            </div>
+        </div>
+        <div id="video">
+            <!--video src="images/animationV2.mp4"></video LaVidéo ne fonctionnait pas-->
+        
+        <iframe width="424" height="238" src="https://www.youtube.com/embed/BFIIYROreDQ" title="Faster Forward | Speed Skating Canada Brand Anthem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jRm0aubweyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HaoszwaplmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <footer>
+        
+        <div id="icons">
+
+        </div>
+        <div id="infos">
+            <p>Lien vers le site du Collège :<br><a href="https://www.cmaisonneuve.qc.ca/">https://www.cmaisonneuve.qc.ca/</a></p>
+            <p>Département TIM de Maisonneuve 2022 | 1W1 Mise en Page Web</p>
+            <p><img src="images/copyright_FILL0_wght300_GRAD-25_opsz48.png" alt="icon"> Tout droits réservés</p>
+            <p></p>
+        </div>
+        <div id="liens">
+            <p>Liens des Sources</p>
+            <h6>image accueil: https://speedskating.ca/category/events-international/</h6>
+            <h6>image inscription: https://speedskating.ca/teams/short-track/</h6>
+            <h6>image tableau: https://it.depositphotos.com/96139492/stock-photo-winter-ice-landscape-on-siberian.html<h6>
+            <h6>image équipement: https://cpvpat.org/</h6>
+            <h6>image histoire: https://speedskatingwinterolympics2014.weebly.com/history-of-speed-skating.html</h6>
+            <h6>image pingouin: https://lespingouins.fpvq.org/fr/publication/nouvelle/sinscrire_et_trouver_votre_ecole_les_pingouins.html</h6>
+            <h6>images gallerie: https://speedskatingcanada.photoshelter.com/galleries/C0000S4PRJKNl8aQ/G0000oaYz1kJMy0o/World-Championships-Montreal</h6>
+        </div>
+    </footer>
+</body>
+</html>

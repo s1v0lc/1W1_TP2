@@ -1,0 +1,10 @@
+
+image accueil: https://speedskating.ca/category/events-international/
+
+image inscription: https://speedskating.ca/teams/short-track/
+
+image tableau: https://it.depositphotos.com/96139492/stock-photo-winter-ice-landscape-on-siberian.html
+
+image équipement: https://cpvpat.org/
+
+image histoire: https://speedskatingwinterolympics2014.weebly.com/history-of-speed-skating.html

@@ -1,0 +1,441 @@
+/*************************
+Feuille de style pour TP2
+**************************/
+
+/** Importation des Polices **/
+
+@font-face {
+    font-family: "icedrop";
+    src: url(../polices/icedrop.ttf);
+}
+
+@font-face { /*Bolder version de icedrop*/
+    font-family: "icedropbold";
+    src: url(../polices/icedrop_bold.ttf);
+}
+
+@font-face {
+    font-family: "Ice Man";
+    src: url(../polices/Ice\ Man.otf);
+}
+
+/*** Remise à zéro supplémentaire ***/
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Défilement */
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-align:initial;
+}
+
+/** Les Conteneurs princpiaux **/
+
+body {
+   min-width: 1366px; /*Pour respecter la consigne de largeur*/
+}
+
+header {
+    font-family:'Trebuchet MS', sans-serif;
+    position: sticky;
+    top: 0;
+    background-color: rgb(210, 41, 41);
+}
+
+#main {
+    background-color: lightgray;
+    width: 100%; /* Quand je mets la largeur à 100vw,
+    il y a une barre de défilemet horizontale qui apparait et la page devient plus large que mon écran*/
+    height: 600vh;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 30vh;
+}
+
+/*** Header ***/
+
+header div { /*div pour placer la nav à droite*/
+    width: 38vw;
+    float: left;
+}
+
+nav {
+    background-color: rgb(255, 41, 51);
+    height: 10vh;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    background-color: rgb(255, 41, 51);
+    height: inherit;
+    color: white;
+    text-decoration: none; /*Pour enlever le soulignement par défaut*/
+    font-size: 1.4em;
+    padding: 0px 30px;
+    padding-top: 23px;
+    border-radius: 1px; /* coins arrondis*/
+    transition: all 0.5s;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: white;
+    color: rgb(235, 41, 41);
+}
+
+header img { /*Logo*/
+    position: absolute;
+    top: 15%;
+    left: 0.6%;
+    color: white;
+}
+
+header div div {
+    width: 10vh;
+    height: 10vh;
+    background-color: rgb(255, 41, 51);
+}
+
+header h1 { /*Titre tu site*/
+    position: absolute;
+    left: 10%;
+    top: -5%;
+    color: white;
+}
+
+/*** Main ***/
+
+#main>div {
+    border: solid black 2px;
+    height: 100vh;
+}
+
+/*Accueil*/
+
+#accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: url("../images/patineurs.png");
+    background-position: -100px 30px;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    padding-left: 60%;
+}
+
+section div h1 { /*Titre de l'accueil*/
+    font-family: icedropbold; /*Version plus grasse de icedrop*/
+    padding-bottom: 280px;
+    font-size: 3em;
+}
+
+section div h2, section div h3 {
+    font-family: icedrop;
+}
+
+h4 { /*Infos*/
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#accueil div h2:nth-of-type(2) { /*Mon nom*/
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    margin: 0; /*Inefficace*/
+}
+
+/*Inscription*/
+
+#inscription {
+    background-image: url("../images/Header-Team-Short-Track.png");
+    background-repeat: no-repeat;
+    background-position: 30%;
+    background-size: 90%;
+}
+
+#inscription div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    margin-top: 150px; /*Positione tout le form au complet*/
+    margin-left: 820px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 1px 10px 10px 1px #6E6E6E;
+}
+
+#inscription h2 {
+    background-color: rgb(235, 41, 41);
+    color: white;
+    padding:  12px 20px;
+    border-radius: 10px;
+}
+
+input {
+    border: solid lightgray 2px;
+}
+
+input:focus { /*Effet lors d'un click dans l'input*/
+    border-style: groove;
+    background-color: lightgray;
+}
+
+#inscription  label:nth-of-type(4)>label { /*éléments dans sexe*/
+    border: 1px solid lightgray;
+    padding: 4px 8px;
+}
+
+#submit {
+    position: relative;
+    left: -90px;
+    bottom: -20px;
+    
+}
+
+#reset {
+    position: relative;
+    right: -90px;
+    bottom: 30px;
+}
+
+#reset, #submit { /*styles communs des boutons*/
+    width: 100px;
+    height: 33px;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    transition: all 0.5s;
+    border-radius: 5px;
+    z-index: 1; /*Ne fonctionne pas*/
+}
+
+#submit:hover, #reset:hover { /*transition des boutons*/
+    background-color: rgb(255, 41, 51);
+    border: 0px;
+    color: white;
+    border-radius: 1px;
+}
+
+/* Tableau */
+
+#tableau {
+    background-image: url("../images/Dollarphotoclub_102382329.jpg");
+}
+
+table {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 90px auto;
+    width: 800px;
+    height: 60%;
+    border: 3px solid rgb(235, 41, 41);
+}
+
+caption { /*titre du tableau*/
+    background-color: rgb(235, 41, 41);
+    color: white;
+    padding:  12px 20px;
+    border-radius: 10px;
+}
+
+th { /*titres des rangées/colonnes*/
+    border: 2px #6E6E6E double;
+    background-color: lightblue;
+    width: 60px;
+    height: 30px;
+}
+
+.trainingDay { 
+    background-color: cyan;
+}
+
+td { /*cellule du tableau*/
+    font-size: 0.8em;
+    padding-left: 1.5%; /*Pour centrer texte*/
+}
+
+tfoot { /*Notice sous le tableau*/
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Articles */
+
+#articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+#articles div {
+  height: 659px;  
+}
+
+#articles div div { /*colonnes*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 7px groove red;
+}
+
+div div { /*2e colonne*/
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+#articles h3 { /*titre colonnes*/
+    font-size: 1.6em;
+}
+
+#img1 {
+    height: 250px;
+    width: 188px;
+}
+
+#img2 {
+    width: 300px;
+}
+
+#img3 {
+    width: 141px;
+}
+
+/* Galerie */
+
+#gallerie {
+background-color: rgb(255, 41, 51);
+}
+
+#gallerie div {
+    display: flex;
+    flex-direction: row;
+}
+
+#gallerie div:nth-of-type(2) {
+   margin-top: 120px;  
+}
+
+#gallerie img:nth-of-type(1) {
+    width: 405px;
+    height: 270px;
+}
+
+#gallerie img:nth-of-type(2) {
+    width: 190px;
+    height: 270px;
+}
+
+
+#gallerie img:nth-of-type(3) {
+    width: 180px;
+    height: 270px;
+}
+
+#gallerie img:nth-of-type(4) {
+    width: 380px;
+    height: 270px;
+}
+
+#gallerie img:nth-of-type(5) {
+    width: 400px;
+    height: 270px;
+}
+
+#six {
+    width: 337px;
+    height: 270px;
+}
+
+#sept {
+    width: 400px;
+    height: 270px;
+}
+
+#huit {
+    width: 405px;
+    height: 270px;
+}
+
+#neuf {
+    width: 255x;
+    height: 270px;
+}
+
+#dix {
+    width: 400px;
+    height: 270px;
+}
+
+/* Vidéos */
+
+#video {
+    background-image: url("../images/img_40085.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 100px -30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+iframe {
+    height: 300px;
+    transition: all 1s;
+}
+
+iframe:hover {
+    transform: translate(0px, -30px);
+    height: 360px ;
+    border: 3px solid red;
+}
+
+/*** Footer ***/
+
+footer {
+    background-color: #6E6E6E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+h6 {
+    margin: 0;
+}
+
+footer a {
+    padding: 0;
+    background-color: #6E6E6E;
+    color: black;
+    font-family: sans-serif;
+    font-size: inherit;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background-color: #6E6E6E;
+}
+
+footer p {
+    color: white;
+}
+
+p img {
+    width: 15px;
+}
