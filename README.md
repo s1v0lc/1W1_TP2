@@ -1,3 +1,15 @@
-<h1>Un site sur le patinage de vitesse</h1>
+# Travail Pratique Final
+## cours 1W1 - Mise en page web 
 
-<p>https://s1v0lc.github.io/TP2_1W1</p>
+## Objectifs :
+### Créer un site web monopage contenant les sections suivantes
+- Un menu de navigation
+- Une section d'accueil
+- Un formulaire
+- Un tableau
+- Une section contenant des « Articles »
+- Une galerie d'images
+- Une galerie Vidéo
+- Un footer
+### Incorporer des transitions
+### Publier la page sur Github Pages
