@@ -12,4 +12,5 @@
 - Une galerie Vidéo
 - Un footer
 ### Incorporer des transitions
-### Publier la page sur Github Pages
+### Publier la page sur Github Pages : 
+https://s1v0lc.github.io/1W1_TP2/
